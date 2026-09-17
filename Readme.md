@@ -52,11 +52,11 @@ Workstation Player, à l’aide d’une image disque (ISO).
 
 **F.** Lancez la machine virtuelle : **Play virtual machine** 
 
-## Lancement de l'image ISO (Linux - Live CD) 
+## Lancement de l'image ISO (Linux - Live_CD) 
 
 **G.** Lancement du live CD : 
 
-![install image disk](/Images/live CD.jpg) 
+![install image disk](/Images/live_CD.jpg) 
 
 
 Shell Linux : 
