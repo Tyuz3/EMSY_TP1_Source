@@ -56,7 +56,8 @@ Workstation Player, à l’aide d’une image disque (ISO).
 
 **G.** Lancement du live CD : 
 
-[Placer votre capture d'écran]() 
+![install image disk](/Images/live CD.png) 
+
 
 Shell Linux : 
 
