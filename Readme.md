@@ -56,59 +56,92 @@ Workstation Player, à l’aide d’une image disque (ISO).
 
 **G.** Lancement du live CD : 
 
-![install image disk](/Images/live_CD.jpg) 
+![Live CD](/Images/live_CD.jpg) 
 
 
 Shell Linux : 
 
-[Placer votre capture d'écran]() 
+![Shell](/Images/Shell.jpg) 
 
 > **ATTENTION** : par défaut, le clavier est configuré est **Clavier Americain**
 
 Q1. disposition du clavier américain ?
 
-> votre réponse ?!
+> QWERTY
 
 Q2. disposition du clavier suisse-romand ?
 
-> votre réponse ?!
+> QWERTZ
 
 Q3. disposition du le clavier français ? 
 
-> votre réponse ?!
+> AZERTY
 
 **H.** Déplacez-vous à la **racine du système** en utilisant la commande suivante : `cd` 
 
-Q4. vore commande ?!
+Q4. 
+> cd /
 
 **I.** Affichez le contenu de la racine avec la commande : `ls –l`	
 
-![Placer votre capture d'écran]() 
+![Root System](/Images/RootSystem.jpg) 
 
 Q5. Que signifie l'option `-l` avec la commande `ls` 
 
-> votre réponse ?!
+>ls est pour une "list" 
+>l pour "long"
+>Donc on fini pas avoir une longue list avec tout les detail 
+>(si on fais que ls on a une list dans une longe ligne sans aucune info sur les droit de permission, la date de modification, le nom ect.)
+les autre ls connu sont:
+-a pour tout (fichier cacher)
+-h lisible pour l'humain (souvent la même chose que just ls)
+-S pour ordrer par taille
+
+<details>
+<summary>Voici le screen de la commande "ls"</summary>
+
+![Ligne ls](/Images/ligne_ls.jpg) 
+
+</details>
 
 Q6. Décrypter la ligne où se trouve le répertoire **home**    
 
-[Placer votre capture d'écran]()
+La ligne **home**
+<details>
+<summary>La ligne **home** Image</summary>
 
-> votre réponse ?!
+![HomeInRoot](/Images/HomeInRoot.jpg) 
+
+</details>
+|**
+
+> drwxr-xr-x	1 root root	60 Sep 17 13:49 home
+Donc: 
+
+| drwxr    | xr | x | 1 | root | root | 60 | Sep 17 13:49 | home |
+|----------|----|---|---|------|------|----|--------------|------|
+| d-rwxr    | x-r | x | 1 | root | root | 60 | Sep 17 13:49 | home |
+|-|-|-|Nombre de répertoir dans le home|Owner|Group|tail en byte| Dernière modification | le nome
+
+
 
 **J.** Créez un répertoire de travail nommé « EMSY_VosInitiales» 
 
 Q7. dans quel dossier racine allez-vous le placer (justifiez votre réponse) 
 
-> votre réponse ?! 
+> Dans le Home comme cale on pourras avoir acces quand on installera linux.
 
 Q8. Quelle commande allez-vous utiliser pour faire ceci ?  
 
-> votre commande ?! 
+> sudo mkdir EMSY_TCK_NTN
+Sudo car on est dans le live CD 
+mkdir pour make directory (crée un répertoir)
+puis le nom de notre fichier
 
 **K.** Dans ce répertoire, créez un fichier texte que vous nommerez `TESTSLO_XXX_XXX` et éditez celui en écrivant un texte, exemple : "TP linux by XXX et XXX".
 	   Utiliser la commande `vi`
 
-> votre commande ?! 
+WHY NOT NANO ?
 
 Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi` 
 
