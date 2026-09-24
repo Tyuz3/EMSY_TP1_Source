@@ -1,4 +1,4 @@
-# TP1 - Installation Linux sur une VM - V0.4
+# TP1 - Installation Linux sur une VM - V0.4 TCK-NTN
 
 ## Groupe 
 
@@ -104,9 +104,10 @@ les autre ls connu sont:
 
 </details>
 
-Q6. Décrypter la ligne où se trouve le répertoire **home**    
+Q6. Décrypter la ligne où se trouve le répertoire *home*    
 
 La ligne **home**
+
 <details>
 <summary>La ligne **home** Image</summary>
 
@@ -118,25 +119,34 @@ La ligne **home**
 > drwxr-xr-x	1 root root	60 Sep 17 13:49 home
 Donc: 
 
-| drwxr    | xr | x | 1 | root | root | 60 | Sep 17 13:49 | home |
-|----------|----|---|---|------|------|----|--------------|------|
-| d-rwxr    | x-r | x | 1 | root | root | 60 | Sep 17 13:49 | home |
-|-|-|-|Nombre de répertoir dans le home|Owner|Group|tail en byte| Dernière modification | le nome
 
+>| Champ | Valeur | Description |
+>|-------|--------|-------------|
+>| Type | `d` | Répertoire (`d` = directory) |
+>| Permissions (owner) | `rwx` | Lecture, écriture, traversée — owner uniquement |
+>| Permissions (group) | `r-x` | Lecture + traversée — pas d'écriture |
+>| Permissions (other) | `r-x` | Lecture + traversée — pas d'écriture |
+>| Liens physiques | `1` | Nombre de hard links vers l'inœud (2 + sous-répertoires pour un dir.) |
+>| Owner | `root` | Utilisateur propriétaire (UID 0) |
+>| Group | `root` | Groupe principal (GID 0) |
+>| Taille | `60` | Taille en octets de la structure interne du répertoire (`st_size`) |
+>| Modification | `Sep 17 13:49` | Dernière modification (année courante implicite) |
+>| Nom | `home` | Chemin : `/home` |
 
 
 **J.** Créez un répertoire de travail nommé « EMSY_VosInitiales» 
 
 Q7. dans quel dossier racine allez-vous le placer (justifiez votre réponse) 
 
-> Dans le Home comme cale on pourras avoir acces quand on installera linux.
+> Dans le Home comme cela on pourras avoir access quand on installera linux et on pourras le modifier en tant qu'utulisateur. 
 
 Q8. Quelle commande allez-vous utiliser pour faire ceci ?  
 
 > sudo mkdir EMSY_TCK_NTN
-Sudo car on est dans le live CD 
-mkdir pour make directory (crée un répertoir)
-puis le nom de notre fichier
+
+>*Sudo car on est dans le live CD en tant que root.
+>mkdir pour make directory (crée un répertoir)
+>puis le nom de notre fichier*
 
 **K.** Dans ce répertoire, créez un fichier texte que vous nommerez `TESTSLO_XXX_XXX` et éditez celui en écrivant un texte, exemple : "TP linux by XXX et XXX".
 	   Utiliser la commande `vi`
@@ -145,15 +155,16 @@ WHY NOT NANO ?
 
 Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi` 
 
-> votre réponse ?!
+> non car on est en tant que root donc il faut mettre *sudo* devant
 
 Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que le répertoire créé ci-dessus existe toujours (justifiez votre réponse) ? 
 
-> votre réponse ?!
+> non comme on est dans le live CD il ne sauve rien car il prepare l'iso pour etre installer donc c'est comme si on travaillais sur la RAM.
 
 **L.** Tapez la commande `ls -l /dev/sda` 
 
-![Placer votre capture d'écran]() 
+![dev_sda](/Images/list_dev_sda.jpg)
+
 
 Q11. Que signifie **sda** ? 
 
