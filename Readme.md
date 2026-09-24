@@ -159,7 +159,7 @@ Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi`
 
 Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que le répertoire créé ci-dessus existe toujours (justifiez votre réponse) ? 
 
-> non comme on est dans le live CD il ne sauve rien car il prepare l'iso pour etre installer donc c'est comme si on travaillais sur la RAM.
+> non, comme on est dans le live CD il ne sauve rien car il prepare l'iso pour etre installer donc c'est comme si on travaillais sur la RAM.
 
 **L.** Tapez la commande `ls -l /dev/sda` 
 
