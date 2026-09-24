@@ -168,7 +168,7 @@ Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que 
 
 Q11. Que signifie **sda** ? 
 
-> votre réponse ?!
+> Designe le disque de stockage détécté par le système
 
 Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui du point L (justifiez votre réponse) ?
 
