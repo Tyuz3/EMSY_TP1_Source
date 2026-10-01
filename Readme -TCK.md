@@ -153,23 +153,17 @@ Q8. Quelle commande allez-vous utiliser pour faire ceci ?
 	   Utiliser la commande `vi`
 
 Je me suis poser la quesiton de pourquoi pas nano ?
-Suite a mes recherche j'ai trouver que vi est present dans tout les systme linux, suite au Norme POSIX (Portable Operating System Interface) :
-(https://en.wikipedia.org/wiki/List_of_POSIX_commands)
-Et nano n'ets pas toujours installer.
+Suite a mes recherche j'ai trouver que vi est present dans tout les systme linux, suite au Norme POSIX
+https://en.wikipedia.org/wiki/List_of_POSIX_commands
 
 
 Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi` 
 
->oui. 
->vi nomfichier crée le fichier s'il n'existe pas, puis
->on l'édite sans autre commande. Il faut juste connaitre les modes : 
->i pour écrire, Esc pour revenir en mode commande, :wq pour enregistrer et
->quitter, :q!
->Note: assez compliquer lorsqu'on est en clavier Americain donc ! impossible a trouver.
+> non car on est en tant que root donc il faut mettre *sudo* devant
 
 Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que le répertoire créé ci-dessus existe toujours (justifiez votre réponse) ? 
 
-> non, comme on est dans le live CD qui est charger dans la RAM, il ne sauve rien.
+> non, comme on est dans le live CD il ne sauve rien car il prepare l'iso pour etre installer donc c'est comme si on travaillais sur la RAM.
 
 **L.** Tapez la commande `ls -l /dev/sda` 
 
@@ -178,15 +172,11 @@ Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que 
 
 Q11. Que signifie **sda** ? 
 
-> ste premier disque détecté de type SCSI/SATA. s = SCSI/SATA, d = disk, a =premier disque ( sdb = deuxième…). Ses partitions s'appellent sda1 , sda2 … Dans la VM, c'est le disque virtuel de 20 Go.
+> votre réponse ?!
 
 Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui du point L (justifiez votre réponse) ?
-// differance entre /home et /dev/sda ?
 
->  /home est un répertoire (type d ) qui contient des fichiers
-> /dev/sda ne contient pas de données luimême, il représente le disque matériel
-
----
+> votre réponse ?!
 
 ## Installation de SparkyLinux sur la VM
 
@@ -196,11 +186,11 @@ Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui
 
 Q13. Quelle est la taille de disque minimum recommandée pour installer la distribution Sparky en mode cli 
 
-> 15 GB, (dans le mode auto).
+> votre réponse ?!
 
 Q14. A quoi sert la partition swap ? Est-ce que ce principe existe-t-il sur les OS Microsoft Windows ? 
 
-> bonne question, je sais pas encore
+> votre réponse ?!
 
 Q15. Quel format pourriez-vous utiliser pour la 3ème partition afin qu’elle soit également accessible depuis un OS Microsoft ? 
 
