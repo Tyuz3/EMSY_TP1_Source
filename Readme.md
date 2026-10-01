@@ -172,7 +172,7 @@ Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que 
 
 Q11. Que signifie **sda** ? 
 
-> votre réponse ?!
+> Designe le disque de stockage détécté par le système
 
 Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui du point L (justifiez votre réponse) ?
 
@@ -236,7 +236,7 @@ Q20. Que veut dire `apt` ?
 
 Q21. Est-ce que cette commande (`apt`) peut être utilisée sur toutes les distributions Linux (justifiez votre réponse)? 
 
-> Non, car  cette commande fait partie des distribution debian. d'autre distribution utulise different proggramme 
+> Non, car  cette commande fait partie des distribution debian. d'autre distribution utilisent differents proggrammes 
 
 **R.** Créez un sous-répertoire « EMSY_TP1_XXX-YYY » dans le répertoire de votre utilisateur. 
        
