@@ -92,10 +92,10 @@ Q5. Que signifie l'option `-l` avec la commande `ls`
 >l pour "long"
 >Donc on fini pas avoir une longue list avec tout les detail 
 >(si on fais que ls on a une list dans une longe ligne sans aucune info sur les droit de permission, la date de modification, le nom ect.)
-les autre ls connu sont:
--a pour tout (fichier cacher)
--h lisible pour l'humain (souvent la même chose que just ls)
--S pour ordrer par taille
+>les autre ls connu sont:
+>-a pour tout (fichier cacher)
+>-h lisible pour l'humain (affiche la valeur en Ko/Mo/Go)
+>-S pour ordrer par taille
 
 <details>
 <summary>Voici le screen de la commande "ls"</summary>
@@ -144,14 +144,18 @@ Q8. Quelle commande allez-vous utiliser pour faire ceci ?
 
 > sudo mkdir EMSY_TCK_NTN
 
->*Sudo car on est dans le live CD en tant que root.
+>mkdir: MAke DIRectory.
+>*Sudo car on est dans le live CD en tant que "utulisateur" car on a un $. Si on étais root (admin) on aurais # et on aurais pas besoin de mettre sudo.
 >mkdir pour make directory (crée un répertoir)
 >puis le nom de notre fichier*
 
 **K.** Dans ce répertoire, créez un fichier texte que vous nommerez `TESTSLO_XXX_XXX` et éditez celui en écrivant un texte, exemple : "TP linux by XXX et XXX".
 	   Utiliser la commande `vi`
 
-WHY NOT NANO ?
+Je me suis poser la quesiton de pourquoi pas nano ?
+Suite a mes recherche j'ai trouver que vi est present dans tout les systme linux, suite au Norme POSIX
+https://en.wikipedia.org/wiki/List_of_POSIX_commands
+
 
 Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi` 
 
