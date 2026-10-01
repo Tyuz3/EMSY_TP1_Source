@@ -232,7 +232,7 @@ Q20. Que veut dire `apt` ?
 
 Q21. Est-ce que cette commande (`apt`) peut être utilisée sur toutes les distributions Linux (justifiez votre réponse)? 
 
-> Non, car  cette commande fait partie des distribution debian. d'autre distribution utulise different proggramme 
+> Non, car  cette commande fait partie des distribution debian. d'autre distribution utilisent differents proggrammes 
 
 **R.** Créez un sous-répertoire « EMSY_TP1_XXX-YYY » dans le répertoire de votre utilisateur. 
        
