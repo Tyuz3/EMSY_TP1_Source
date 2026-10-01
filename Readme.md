@@ -159,7 +159,7 @@ Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi`
 
 Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que le répertoire créé ci-dessus existe toujours (justifiez votre réponse) ? 
 
-> non comme on est dans le live CD il ne sauve rien car il prepare l'iso pour etre installer donc c'est comme si on travaillais sur la RAM.
+> non, comme on est dans le live CD il ne sauve rien car il prepare l'iso pour etre installer donc c'est comme si on travaillais sur la RAM.
 
 **L.** Tapez la commande `ls -l /dev/sda` 
 
@@ -212,27 +212,27 @@ Q16. Durant l’installation, on vous demande deux noms d’utilisateur. A quoi 
 
 Q17. A quoi sert `nano` ? 
 
-> votre réponse ?!
+> C'est comme la commande vi, c'est un editeur de text.
 
 **Q.** Testez si l’application `git` est installée sur votre distribution, si ce n’est pas le cas installez un client git. 
 
 Q18. Comment savoir si `git` est déjà installé ? 
 
-> votre réponse ?!
+> git -version
 
 > votre commande ?! 
 
 Q19. Si le client `git` n'est pas installé, quelle(s) commande(s) utilisez-vous pour l’installer ? 
 
-> votre commande ?! 
+> sudo apt install git 
 
 Q20. Que veut dire `apt` ? 
 
-> votre réponse ?!
+> apt veux dire : 
 
 Q21. Est-ce que cette commande (`apt`) peut être utilisée sur toutes les distributions Linux (justifiez votre réponse)? 
 
-> votre réponse ?!
+> Non, car  cette commande fait partie des distribution debian. d'autre distribution utulise different proggramme 
 
 **R.** Créez un sous-répertoire « EMSY_TP1_XXX-YYY » dans le répertoire de votre utilisateur. 
        
