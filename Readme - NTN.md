@@ -200,15 +200,15 @@ Q13. Quelle est la taille de disque minimum recommandée pour installer la distr
 
 Q14. A quoi sert la partition swap ? Est-ce que ce principe existe-t-il sur les OS Microsoft Windows ? 
 
-> bonne question, je sais pas encore
+> Cette partition sert d'extension à la RAM
 
 Q15. Quel format pourriez-vous utiliser pour la 3ème partition afin qu’elle soit également accessible depuis un OS Microsoft ? 
 
-> votre réponse ?!
+> Le format de partition NFTS est accessible depuis une OS microsoft
 
 Q16. Durant l’installation, on vous demande deux noms d’utilisateur. A quoi correspondent-ils ? 
 
-> votre réponse ?!
+> Le nom de la machine et le nom d'utilisateur
 
 **N.** Une fois l’installation de Linux terminée, prenez une capture d’écran du démarrage de votre système (GRUB)
 
@@ -216,9 +216,9 @@ Q16. Durant l’installation, on vous demande deux noms d’utilisateur. A quoi 
 
 **O.** Trouvez la ou les lignes de commande permettant de changer le clavier et procédez à la configuiration 
 
-> votre commande ?! 
+> sudo nano /etc/default/keyboard 
 
-![Placer votre capture d'écran]() 
+![Interface pour le changement de clavier](/Images/commande_clavier_suisse.jpg) 
 
 **P.** Tapez la commande : `nano -version`
 
