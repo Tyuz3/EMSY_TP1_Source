@@ -54,15 +54,29 @@ Workstation Player, à l'aide d'une image disque (ISO).
 
 **F.** Lancez la machine virtuelle : **Play virtual machine** 
 
+---
+
 ## Lancement de l'image ISO (Linux - Live CD) 
 
 **G.** Lancement du live CD : dans le menu de démarrage de l'ISO, on choisit **SparkyLinux CLI**.
 
+<details>
+<summary>Screen du Live CD</summary>
+
 ![Live CD](Images/live_CD.jpg) 
 
-Shell Linux : la session `live` s'ouvre automatiquement (*automatic login*), on arrive sur le prompt `live@live:~$`.
+</details>
 
-![Shell](Images/Shell.jpg) 
+
+> Shell Linux : la session `live` s'ouvre automatiquement, on arrive sur le prompt `live@live:~$`.
+
+<details>
+<summary>Screen du Shell</summary>
+
+![Shell](Images/Shell.jpg)
+
+</details>
+
 
 > **ATTENTION** : par défaut, le clavier est configuré en **clavier américain**
 
@@ -84,11 +98,18 @@ Q4. Votre commande ?
 
 > `cd /`
 >
-> Le `/` représente la racine du système. `cd` tout seul ne va pas à la racine, il ramène dans le répertoire personnel de l'utilisateur (`~` = `/home/live`).
+> Le `/` représente la racine du système. `cd` tout seul ne va pas à la racine, il ramène dans le répertoire personnel de l'utilisateur. Donc cd / nous donne en language "humain" Change directory to root (Changer de reépertoir à la racine)
 
 **I.** Affichez le contenu de la racine avec la commande : `ls -l`	
 
-![Root System](Images/RootSystem.jpg) 
+<details>
+<summary>Screen du system root</summary>
+
+![Root System](Images/RootSystem.jpg)
+
+</details>
+
+
 
 Q5. Que signifie l'option `-l` avec la commande `ls` ?
 
@@ -122,6 +143,7 @@ Q6. Décryptez la ligne où se trouve le répertoire *home*
 
 > `drwxr-xr-x  1 root root  60 Sep 17 13:49 home`
 
+
 | Champ | Valeur | Description |
 |-------|--------|-------------|
 | Type | `d` | Répertoire (`d` = *directory*). Un fichier normal aurait `-`, un lien symbolique `l`. |
@@ -153,8 +175,13 @@ cd /home
 sudo mkdir EMSY_TCK_NTN
 
 ```
+<details>
+<summary>Tips for collapsed sections</summary>
 
 ![home EMSY](Images/home-EMSY.jpg)
+
+</details>
+
 
 > - `mkdir` = *make directory* : crée un répertoire, suivi du nom du dossier à créer.
 > - Sans `sudo`, on obtient `Permission denied` : on est connecté avec l'utilisateur normal `live` (le prompt se termine par `$`, si >il y avais `#` on aurais pas besoin du sudo car on serais en admin (root) )
@@ -215,7 +242,8 @@ Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui
 ## Installation de SparkyLinux sur la VM
 
 > **Remarque importante : j'ai par habitude et par acident j'ai mis à jour le live CD avant l'installation**
-> je l'avais fais avec 
+
+> je l'ai fais avec :
 ``` shell
 sudo apt update
 sudo apt upgrade -y
@@ -226,7 +254,14 @@ sudo apt upgrade -y
 
 1. Installation depuis le live CD avec l'installateur en mode texte : `sudo sparky-installer`
 
+<details>
+<summary>Tips for collapsed sections</summary>
+
 ![Installateur Sparky](Images/IntsallerSparky(1).png)
+
+</details>
+
+
 
 > **(live CD mis à jour)** Cette capture montre le 1er écran de l'installateur, les écrans de l'installateur peuvent être légèrement différents de celui de mes camarade. 
 
@@ -280,14 +315,28 @@ Q16. Durant l'installation, on vous demande deux noms d'utilisateur. À quoi cor
 
 **N.** Une fois l'installation de Linux terminée, prenez une capture d'écran du démarrage de votre système (GRUB)
 
-![GRUB](Images/Grub.png) 
+<details>
+<summary>Screen du Grub</summary>
+
+![GRUB](Images/Grub.png)
+
+</details>
+
+ 
 
 > Menu de GRUB 2.12 (Debian 13) au démarrage : l'entrée *Sparky GNU/Linux* démarre le système, *Advanced options* permet de choisir un autre noyau ou le mode de dépannage (*recovery*).
 >
 > **(live CD mis à jour)** La version affichée en haut (`2.12-9+deb13u2`) est celle du paquet GRUB après la mise à jour (`+deb13u2` = 2ème mise à jour de ce paquet dans Debian 13). De même, le noyau Linux installé est plus récent que celui du live CD : `uname -r` affiche `6.12.111+deb13-amd64`, alors que le live CD utilisait `6.12.101` (capture du point G).
 
+<details>
+<summary>Version du Noyau</summary>
+
 ![Version du noyau](Images/N_uname.png)
->
+
+</details>
+
+
+
 > **GRUB** (*GRand Unified Bootloader*) est le chargeur d'amorçage : il affiche le menu de démarrage, puis charge le noyau Linux (`vmlinuz`) et l'`initrd` en mémoire. C'est le premier truc qui boot après le BIOS.
 
 **O.** Trouvez la ou les lignes de commande permettant de changer le clavier et procédez à la configuration 
@@ -313,7 +362,14 @@ sudo setupcon
 
 **P.** Tapez la commande : `nano -version`
 
+<details>
+<summary> Version de nano </summary>
+
 ![nano version](Images/P_nano_version.png) 
+
+</details>
+
+
 
 > Remarque : `nano -version` ne fonctionne pas comme prévu. `nano` lit `-version` comme une suite d'options courtes (`-v`, `-e`, `-r sion`…) et répond `Requested fill size "sion" is invalid`. La bonne commande est **`nano --version`**, qui affiche la version installée : `GNU nano, version 8.4` (voir capture).
 
@@ -406,11 +462,24 @@ nano EMSY_TP1.c
 
 > Enregistrer : `Ctrl+O` puis `Entrée` ; quitter : `Ctrl+X`. ou `Ctrl+X`, `Y`, `Entée`
 
+<details>
+<summary>Screen du programe avec nano</summary>
+
 ![nano EMSY_TP1.c](Images/T_nano_EMSY_TP1.png)
 
-> Capture : le fichier `EMSY_TP1.c` ouvert dans nano 8.4 sans modification.
+</details>
+
+> le fichier `EMSY_TP1.c`
+
+<details>
+<summary>le fichier `EMSY_TP1.c` ouvert avec nano 8.4 (sans modification)</summary>
 
 ![printf corrigé](Images/T_nano_printf.png)
+*note le proggram ici est incorrect.*
+
+</details>
+
+
 
 > Capture : la ligne `printf` dans le fichier avec la compilation (point U-A) et l'exécution (point V) du programme.
 
@@ -422,7 +491,14 @@ gcc --version
 
 > Version installée : **`gcc (Debian 14.2.0-19) 14.2.0`** (voir capture).
 
+<details>
+<summary>gcc verison</summary>
+
 ![gcc version](Images/U_gcc_version.png)
+
+</details>
+
+
 
 **U-A.** Tapez les commandes suivantes :
 ```Shell 
@@ -436,8 +512,13 @@ gcc -Wall -o EMSY_TP1.o -c EMSY_TP1.c
 gcc -o EMSY_TP1 EMSY_TP1.o 
 ```
 
+<details>
+<summary>Compilation</summary>
 
 ![Compilation](Images/UA_compilation.png)
+
+</details>
+
 
 Q25. Quels sont les fichiers qui ont été générés ?
 
@@ -451,14 +532,20 @@ Q25. Quels sont les fichiers qui ont été générés ?
 ``` shell
 ./EMSY_TP1
 ```
+<details>
+<summary> Execution du programme </summary>
 
 ![Exécution](Images/V_execution.png)
+
+</details>
+
 
 Q26. Que se passe-t-il ?
 
 > Le programme s'exécute : il affiche `Hello world ! TP1 EMSY by TCK & NTN` puis rend la main au shell (voir la 2ème capture du point T).
 > Lors de la 1ère exécution (capture ci-dessus), le texte contenait une faute de frappe (`EMSYYY`) : je l'ai corrigé le `printf` avec nano, puis recompilé avec les deux commandes `gcc` du point U-A avant de relancer le programme.
 
+---
 
 ## Tips 
 
