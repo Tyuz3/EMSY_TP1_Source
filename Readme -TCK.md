@@ -20,7 +20,7 @@ Workstation Player, à l'aide d'une image disque (ISO).
 - VMware Workstation Player - V17
 - Image disque (ISO) : sparkylinux-6.4-x86_64-minimalcli.iso
 
-> Remarque : la version réellement utilisée pour ce TP est **SparkyLinux 8.4 MinimalCLI « Seven Sisters »** (`sparkylinux-8.4-x86_64-minimalcli.iso`), basée sur **Debian 13 « trixie »** (noyau 6.12), comme on le voit sur les captures du live CD.
+> Remarque : Expliquer plus en details après, la version utilisée pour ce TP est **SparkyLinux 8.4 MinimalCLI. Ceci est du au faite que j'ai mis a jour le system dans le live CD avant installation.
 
 ## Création d'une machine virtuelle 
 
@@ -61,7 +61,7 @@ Workstation Player, à l'aide d'une image disque (ISO).
 **G.** Lancement du live CD : dans le menu de démarrage de l'ISO, on choisit **SparkyLinux CLI**.
 
 <details>
-<summary>Screen du Live CD</summary>
+<summary>Lancement du live CD</summary>
 
 ![Live CD](Images/live_CD.jpg) 
 
